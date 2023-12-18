@@ -1,0 +1,103 @@
+:root {
+    --pinkBG: hsl(275, 100%, 97%);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Work Sans', sans-serif;
+    background-color: var(--pinkBG);
+    background-image: url(./assets/images/background-pattern-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: clamp(5rem, -0.909rem + 94.545vw, 37.5rem);
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: clamp(0.1rem, 0.005rem + 1.527vw, 0.625rem);
+    margin-top: clamp(0.75rem, -0.127rem + 14.03vw, 12.5rem);
+    margin-bottom: clamp(0.2rem, -0.018rem + 3.493vw, 3.125rem);
+}
+
+.container__logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: clamp(0.2rem, 0.009rem + 3.055vw, 1.25rem);
+}
+
+.container__logo__divImage {
+    display: flex;
+    width: clamp(0.4rem, 0.018rem + 6.109vw, 2.5rem);
+}
+
+.container__logo__divImage__star {
+    width: 100%;
+}
+
+.container__logo__titleLogo {
+    font-size: clamp(0.5rem, 0.045rem + 7.273vw, 3rem);
+}
+
+.container__questions {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container__questions__size {
+    font-size: clamp(0.2rem, 0.055rem + 2.327vw, 1rem);
+    cursor: pointer;
+}
+
+.container__questions__size:hover {
+    color: rgb(198, 78, 198);
+}
+
+.btn {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+.container__questions__minus {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: clamp(1rem, 0.705rem + 4.727vw, 2.625rem);
+}
+
+.container__questions__minus__iconMinus {
+    width: 100%;
+}
+
+.container__answer {
+    width: 90%;
+    text-align: left;
+    max-height: 110px;
+    transition: max-height 0.5s;
+    overflow: hidden;
+}
+
+.container__answer__size {
+    font-size: clamp(0.2rem, 0.055rem + 2.327vw, 1rem);
+    font-weight: 400;
+}
+
+.answerText {
+    max-height: 0px;
+}
